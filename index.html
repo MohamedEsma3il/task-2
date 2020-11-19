@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Combatible" content="ie-edge">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <title>Login Form</title>
+    <style type="text/css">
+        body {
+    margin: 0;
+    font-family: sans-serif;
+}
+h1 {
+color: rgb(36, 36, 228);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul li {
+    list-style-type: none;
+    
+}
+header {
+    display: flex;
+    justify-content:space-between;
+}
+.container{
+    position: fixed;
+    width:15%;
+    top: 0;
+    right: 0;
+    opacity: .7;
+    text-align: left;
+    background:gray;
+    height: 100%;
+    padding-top: 2em;
+}
+.nav-bar #menu{
+    float: right;
+ top: 0;
+ margin-right : 5px ;
+}
+.nav-bar ul {
+    position: relative;
+    margin-top:3px ;
+}
+.nav-bar ul li {
+    margin-top:15px ;
+    padding: 10px;
+    width: 60%;
+}
+.nav-bar ul li a:hover {
+    color: green;
+}
+.form-container {
+    position: relative;
+    width: 40%;
+    margin: 1.5em 40% 1.5em auto;
+text-align: center;
+background-color: whitesmoke;
+z-index: 7;
+border-radius: 20px;
+box-shadow:10px 10px 8px #888888;
+height: 500px;
+}
+
+.data-form .data,#sub {
+    margin: 5px;
+    outline: none;
+    text-align: center;
+    margin-left: 25% ;
+padding: 15px;
+border: solid white 1px;
+border-radius: 25px ;
+    display: block;
+    width: 50%;
+    background-color: honeydew;
+    margin-top: 20px;
+    
+}
+#sub {
+    margin-left : 28% ;
+}
+.links {
+    color: rgb(36, 36, 228);
+    margin-top: 20px;
+}
+.data:focus {
+
+border-color: green;
+}
+#sub:hover {
+    background-color: green;
+}
+    </style>
+</head>
+<body>
+    
+  <header>
+    <p> <a href="#">HOPE</a></p>
+   <div class="container">
+    
+    <nav class="nav-bar">
+        <a><img src="bar.svg" id="menu"></a> 
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+    </nav>
+    </div>
+</header>
+<div class="form-container">
+<div class="data-form">
+    <h1>Facebook</h1>
+    <h4>Login</h4>
+    <form class="data">
+    <input type="text" name="name" placeholder="Enter email or name" class="data">
+    <input type="password" name="password" placeholder="Password" class="data">
+    <input type="submit" value="Login" id="sub">
+    <a href="#" class="links">Forget Password</a><span> or </span><a href="#" class="links">Sign up</a>
+    </form>
+    
+</div>
+</div>
+</body>
+</html>
